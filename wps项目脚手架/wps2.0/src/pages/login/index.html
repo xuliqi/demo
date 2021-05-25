@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=0">
+	<link rel="shortcut icon" type="image/x-icon" href="<%= require('src@/assets/iconfont.ico') %>" />
+    <title>内镜闭环管理系统</title>
+</head>
+
+<body>
+	<div class="close-btn"></div>
+	<div class="my-container">
+		<!-- 标题部分 -->
+		<div class="login-title-box">
+			<span>内镜闭环管理系统</span>
+		</div>
+		<!-- 输入框和登录按钮区域 -->
+		<div class="login-input-box">
+			<span class="input-box"><input type="text" placeholder="请输入用户名" id="usercode"></span><br>
+			<span class="input-box"><input type="password" placeholder="请输入密码" id="userpsword"></span><br>
+			<span class="btn-box">登录</span>
+			<!--<span class="" id="exit">退出程序</span>-->
+		</div>
+		<!-- 下面的文字信息区域 -->
+		<div class="login-info-box">
+			<p>南昌大学第一附属医院内镜中心</p>
+			<p>青岛美迪康数字工程有限公司</p>
+			<p>2019.9</p>
+		</div>
+		<!-- 登录版本区域 -->
+		<div class="login-edition-box">
+			<span>版本V1.0</span>
+		</div>
+	</div>
+	
+<%= require('html-loader!src@/templates/footer.html') %>

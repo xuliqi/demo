@@ -1,0 +1,116 @@
+@import url("./common.css");/*引入通用的css*/
+
+html{font-size: 16px;}
+body{font-size: 100%;}
+body{background: rgba(240, 244, 251, 1);}
+.navbar-me{
+    height: 3.75rem;
+    line-height: 3.75rem;
+    background: rgba(66, 139, 202, 1);
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+
+    .navbarcont{
+        height: 100%;
+        margin: 0 30px;
+        position: relative;
+        text-align: center;
+
+        .navbar-brand{
+            color: #fff;
+            line-height: 3.75rem;
+            height: 3.75rem;
+            font-size: 1rem;
+            padding: 0;
+        }
+        .navbar-brand-icon{
+            display: block;
+            float: left;
+            width: 1.75rem;
+            height: 1.75rem;
+            background: url(../../assets/u199.png) no-repeat;
+            background-size: 100% 100%;
+            margin: 16px 1rem 0 0;
+        }
+        .navbar-collapse{
+            position: absolute;
+            left: 30%;
+            right: 30%;
+            font-size: 1.25rem;
+        }
+        .navbar-user{
+            height: 1.5rem;
+            line-height: 1.5rem;
+            margin-top: 1.125rem;
+
+            span,a{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .username{
+                font-size: 1rem;
+                font-weight: 700;
+            }
+            .userline{
+                width: 1px;
+                border-left: 1px solid rgba(242, 242, 242, 0.4);
+                height: 1.25rem;
+                margin: 0 10px;
+            }
+            .userquit{
+                width: 22px;
+                height: 18px;
+                background: url(../../assets/u98.png) no-repeat;
+            }
+
+        }
+        
+
+    }
+
+
+}
+
+
+
+@media (max-width: 965px){
+    .navbar-me .navbarcont .navbar-brand,.navbar-me .navbarcont .navbar-user .username{
+        font-size: 0.875rem;
+    }
+    .navbar-me .navbarcont .navbar-collapse{
+        left: 25%;
+        right: 25%;
+        font-size: 1rem;
+    }
+}
+
+// 退出登录框
+.my-layui-layer {
+    width: 300px;
+    min-height: 200px;
+    .close-box {
+        padding: 30px 40px;
+        >span.btn {
+            padding: 0;
+            display: block;
+            text-align: center;
+            height: 3rem;
+            background-color: #428bca;
+            color: #fff;
+            line-height: 3rem;
+            font-size: 1.2rem;
+            &.close-program {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

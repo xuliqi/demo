@@ -1,0 +1,100 @@
+/*
+* @Description: 登录页面的样式表
+* @Author: 王新
+* @Date: 2019-09-06 08:42:47
+*/
+html {
+    overflow: hidden;
+}
+
+body{
+    min-height: 512px;
+}
+.close-btn{
+
+  background: url(../../assets/close.png) no-repeat 0 0;
+  position:absolute;
+  top:15px;
+  right:15px;
+  width:40px;
+  height:40px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  font-size:24px;
+  text-align:center;
+  z-index:1000;
+}
+.my-container {
+    width: 100%;
+    height: 100%;
+    min-height: 512px;
+    background-color: #428bca;
+    padding-top: 18vh;
+    position: relative;
+
+    /* 登录标题的样式 */
+    .login-title-box {
+        text-align: center;
+        color: #fff;
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+
+    /* 登录输入框和按钮区域 */
+    .login-input-box {
+        text-align: center;
+        padding-top: 11vh;
+
+        >span {
+            display: inline-block;
+            width: 300px;
+            height: 42px;
+            line-height: 42px;
+
+            >input {
+                width: 100%;
+                height: 100%;
+                border: 1px solid #7a7a7a;
+                outline: none;
+                line-height: 40px;
+                padding-left: 10px;
+                font-size: 1rem;
+            }
+        }
+
+        .input-box {
+            margin-bottom: 4vh;
+        }
+
+        /* 登录按钮 */
+        .btn-box {
+            background-color: #22b66e;
+            color: #fff;
+            font-size: 1.25rem;
+            margin-top: 2.5vh;
+        }
+    }
+
+	/* 下面登录信息样式 */
+	.login-info-box {
+		text-align: center;
+		font-size: 1rem;
+		position: absolute;
+		left: 0;
+		bottom: 6.5vh;
+		width: 100%;
+		> p {
+			margin: 0;
+			line-height: 1.5rem;
+		}
+	}
+
+	/* 版本信息区域样式 */
+	.login-edition-box {
+		position: absolute;
+		left: 20px;
+		bottom: 2.5vh;
+		font-size: 0.875rem;
+	}
+
+}
